@@ -1,0 +1,1 @@
+print("I have", 100,"Rs") #print I have 100 RS
