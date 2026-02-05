@@ -41,4 +41,39 @@ def my_function(name = "friend"):
 my_function("Emil")
 my_function("Tobias")
 my_function()
-my_function("Linus")      
+my_function("Linus")
+
+#Keyword Arguments
+def my_function(animal, name):
+  print("I have a", animal)
+  print("My", animal + "'s name is", name)
+
+my_function(animal = "dog", name = "Buddy")
+
+#Positional Arguments
+def my_function(animal, name):
+  print("I have a", animal)
+  print("My", animal + "'s name is", name)
+
+my_function("dog", "Buddy")
+
+#Returning Different Data Types
+def my_function():
+  return ["apple", "banana", "cherry"]
+
+fruits = my_function()
+print(fruits[0])
+print(fruits[1])
+print(fruits[2])
+
+#Positional-Only Arguments
+def my_function(name, /):
+  print("Hello", name)
+
+my_function("Emil")
+
+#Keyword-Only Arguments
+def my_function(*, name):
+  print("Hello", name)
+
+my_function(name = "Emil")
