@@ -11,3 +11,34 @@ def fahrenheit_to_celsius(fahrenheit):
  return(fahrenheit - 32) * 5 / 9
 print(fahrenheit_to_celsius(59))
 print(fahrenheit_to_celsius(90))
+
+#Aruguments
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+
+#note: Parameter is the variable listed inside the () 
+#      Aruguments are the actual value that is sent to the function
+
+def my_function(name): # name is a parameter
+  print("Hello", name)
+
+my_function("Emil") # "Emil" is an argument
+
+#number of Aruguments
+def my_function(fname, lname):
+  print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+
+#default Parameter
+def my_function(name = "friend"):
+  print("Hello", name)
+
+my_function("Emil")
+my_function("Tobias")
+my_function()
+my_function("Linus")      
