@@ -149,3 +149,45 @@ print(odd_numbers)
 students = [("Emil", 25), ("Tobias", 22), ("Linus", 28)]
 sorted_students = sorted(students, key=lambda x: x[1])
 print(sorted_students)
+
+#Recursion
+#Recursion is when a function calls itself. the benefit of meaning that you can loop through data to reach a result.
+def countdown(n):
+  if n <= 0:
+    print("Done!")
+  else:
+    print(n)
+    countdown(n - 1)
+
+countdown(5)
+
+#Base Case and Recursive Case
+def factorial(n):
+  # Base case - A condition that stops the recursion
+  if n == 0 or n == 1:
+    return 1
+  # Recursive case - The function calling itself with a modified argument
+  else:
+    return n * factorial(n - 1)
+
+print(factorial(5))
+
+#Fibonacci Sequence
+def fibonacci(n):
+  if n <= 1:
+    return n
+  else:
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(7))
+
+#Recursion with Lists
+def sum_list(numbers):
+  if len(numbers) == 0:
+    return 0
+  else:
+    return numbers[0] + sum_list(numbers[1:])
+
+my_list = [1, 2, 3, 4, 5]
+print(sum_list(my_list))
+
