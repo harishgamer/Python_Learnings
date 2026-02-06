@@ -77,3 +77,35 @@ def my_function(*, name):
   print("Hello", name)
 
 my_function(name = "Emil")
+
+#Local scope
+def myfunc():
+  x = 300
+  print(x)
+
+myfunc()
+
+#global Scope
+#A variable created in the main body of the code is a global variable and belongs to the global scope.
+x = 300
+
+def myfunc():
+  print(x)
+
+myfunc()
+
+print(x)
+
+#Global Keyword
+#If you need to create a global variable, but are stuck in the local scope, you can use the global keyword
+def myfunc():
+  global x
+  x = 300
+
+myfunc()
+
+print(x)
+
+#NonLocal Keyword
+#The nonlocal keyword is used to work with variables inside nested functions.
+
