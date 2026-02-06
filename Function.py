@@ -108,4 +108,12 @@ print(x)
 
 #NonLocal Keyword
 #The nonlocal keyword is used to work with variables inside nested functions.
+def myfunc1():
+  x = "Jane"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
 
+print(myfunc1())
