@@ -91,6 +91,20 @@ while i < len(thistuple):
   print(thistuple[i])
   i = i + 1
 
+#Join tuple are done with to operator's which are + and * operator
+#2 tuple joint
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
+#multiply tuple
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)
+
 
 
 
